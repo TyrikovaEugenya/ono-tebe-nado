@@ -5,25 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
-    <link rel="stylesheet" href=".\fonts\fonts.css">
-    <link rel="stylesheet" href=".\styles\global.css">
-    <link rel="stylesheet" href=".\styles\style.css">
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/style.css">
   </head>
   <body class="body">
     <header class="header">
       <nav>
        <ul  class="header-menu">
-        <li><a class="header__links-list-item_no-bullit" href="">главная</a></li>
+        <a class="header__links-list-item_no-bullit header__links-list-item" href="">главная</a></li>
         <li><a class="header__links-list-item" href="">посмотреть лоты</a></li>
         <li><a class="header__links-list-item" href="">об аукционе</a></li> 
        </ul>
       </nav>
-      <a class="logo">
-        <img class="logo-image" src="./images/logo-black.svg"></img>
 
+      <a class="logo">
+        <img class="logo-image" src="./images/logo-black.svg" alt="Оно тебе надо"></img>
       </a>
+
       <address class="info">
-        <a href="tel:+70000000">+7(000)000-00-00</a>
+        <a href="tel:+70000000">+7(000)000-00-00</a><br>
         <a href="mailto:mail@example.com">mail@example.com</a>
         <p>наб. Принсерхарт 263-265</p>
         <p>Амстердам</p>
@@ -33,9 +34,9 @@
 
     <section class="cover">
           <div class="overlay"></div>
-          <h1 class="aligned-text">О<span class="cover-no">но</span>
-            <p class="aligned-text-center"><span >Те</span><span class="cover-be">бе</span></p>
-            <p class="aligned-text-right"><span>Н</span><span class="cover-ad">ад</span><span class="cover-o">о</span></p>
+          <h1 class="aligned-text aligned-text-left">О<span class="cover-no-be">но</span>
+            <span class="aligned-text-center"><span>Те</span><span class="cover-no-be">бе</span></span>
+            <span class="aligned-text-right"><span>Н</span><span class="cover-ad">ад</span><span class="cover-o">о</span></span>
           </h1>
           <div class="cover-content">
             <p class="cover-description-text">Аукцион вещей, в которые никто не верил</p>
@@ -46,8 +47,9 @@
       <h2 class="lots-title">Лоты</h2>
       <ul class="lots-card-list">
         <li class="lots-card">
-          <div class="overlay"></div>
-          <a href="" class="card-linkfilm">
+          
+          <a href="" class="card-linkfilm card">
+            <div class="overlay"></div>
             <article class="card-film">
             <h3 class="card-title">фильм режиссёра, который бросил киношколу</h3>
               <p class="card-content">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы узнали, что режиссёр - Пол Томас Андерсон?</p>
@@ -56,17 +58,18 @@
         </li>
         
         <li class="lots-card">
-          <div class="overlay"></div>
-            <a href="" class="card-linkbook">
+            <a href="" class="card-linkbook card">
+              <div class="overlay"></div>
               <article class="card-book">
                 <h3 class="card-title">книга, где описан один скучный день из жизни рекламного агента</h3>
                 <p class="card-content">Объёмом почти тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и о истории литературы, начиная с античных времён. И всё это накладывается на эпическую поэму Гомера. Сколько бы вы поставили на "Улисса" Джеймса Джойса?</p>
               </article>
             </a>
         </li>
+
         <li class="lots-card">
-          <div class="overlay"></div>
-          <a href="" class="card-linkpicture">
+          <a href="" class="card-linkpicture card">
+            <div class="overlay"></div>
             <article class="card-picture">
               <h3 class="card-title">картина, которую повторит даже 5-летний сын маминой подруги</h3>
               <p class="card-content">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на это поставили, если бы не знали, что это - одна из революционных работ Кандинского?</p>
@@ -75,11 +78,11 @@
           </a>
         </li>
       </ul>
-    
+      <a class="nav" href="">посмотреть больше</a>
     </section>
-    <a class="nav" href="">посмотреть больше</a>
+    
     <section class="about">
-      <img class="logo-image-white" src="./images/logo-white.svg"></img>
+      <img class="logo-image-white" src="./images/logo-white.svg" alt="Оно тебе надо"></img>
       <div class="logo-circle"></div>
       <div class="about-text">
         <h2 class="about-title">Об аукционе</h2>
@@ -89,7 +92,7 @@
     </section>
     <footer class="footer">
       <address class="info">
-        <a href="tel:+70000000">+7(000)000-00-00</a>
+        <a href="tel:+70000000">+7(000)000-00-00</a><br>
         <a href="mailto:mail@example.com">mail@example.com</a>
         <p>наб. Принсерхарт 263-265</p>
         <p>Амстердам</p>
@@ -97,20 +100,20 @@
       </address>
       <nav class="footer-menu">
         <ul class="footer-menu-list">
-         <li><a class="footer-link" href="">главная</a></li>
+         <li><a class="footer-link-active" href="">главная</a></li>
          <li><a class="footer-link" href="">посмотреть лоты</a></li>
          <li><a class="footer-link" href="">об аукционе</a></li> 
         </ul>
      </nav>
       <div class="footer-socials">
         <a class="footer-socials-vk-link">
-          <img src="./images/vk.svg" alt="vk">
+          <img class="footer-socials-img" src="./images/vk.svg" alt="vk">
         </a>
         <a class="footer-socials-youtube-link">
-          <img src="./images/yt.svg" alt="youtube">
+          <img class="footer-socials-img" src="./images/yt.svg" alt="youtube">
         </a>
         <a class="footer-socials-pinterest-link">
-          <img src="./images/pinterest.svg" alt="pinterest">
+          <img class="footer-socials-img" src="./images/pinterest.svg" alt="pinterest">
         </a>
       </div>
 
